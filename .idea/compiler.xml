@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tonghao-generator" />
+        <module name="tonghao-framework" />
+        <module name="tonghao-system" />
+        <module name="tonghao-admin" />
+        <module name="tonghao-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tonghao" target="1.8" />
+      <module name="tonghao-admin" target="1.8" />
+      <module name="tonghao-common" target="1.8" />
+      <module name="tonghao-framework" target="1.8" />
+      <module name="tonghao-generator" target="1.8" />
+      <module name="tonghao-system" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

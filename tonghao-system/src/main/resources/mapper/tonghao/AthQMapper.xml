@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.AthQMapper">
+
+    <select id="getAllQlByYhId" resultType="AthQ">
+        SELECT a.* FROM a_th_q a
+        LEFT JOIN a_th_ql_yh b ON a.id = b.qlid
+        LEFT JOIN a_th_user c ON b.yhid = c.id
+        WHERE
+        c.id = #{yhid};
+    </select>
+
+</mapper>
